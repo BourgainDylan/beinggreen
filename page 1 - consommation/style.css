@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.section-1{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    position:relative;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    overflow: hidden;
+   
+  
+}
+
+
+
+ p:before{
+   
+    content:"";
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:0;
+    left:0;
+    border-top: black 2px solid;
+    border-left: black 2px solid;
+  
+    
+}
+
+ p:after{
+   
+    content:"";
+    position:absolute;
+    width:50%;
+    height:50%;
+    bottom:0;
+    right:0;
+    border-bottom: black 2px solid;
+    border-right: black 2px solid;
+  
+    
+}
+
+.text-intro p{
+position: relative;
+width:50%;
+min-width:500px;
+margin-left:200px;
+font-size:24px;
+letter-spacing: 5px;
+padding:20px;
+color:black;
+transition: all 0.4s ease-in-out
+
+}
+
+.sous-titre{
+    min-width:900px;
+    margin-top:100px;
+    font-size:36px;
+    letter-spacing: 10px;
+    font-family: 'Abel', sans-serif;
+  text-transform: uppercase;
+  z-index:4;
+ 
+
+}
+
+#pollution{
+    background-color: black;
+    color:white;
+    padding:20px;
+
+  
+}
+
+#nos-maisons{
+    background-color: #D44747;
+    color:white;
+    padding:20px;
+   
+
+  
+}
+
+.title-consommation{
+position:absolute;
+top:5%;
+left:5%;
+text-transform: uppercase;
+writing-mode: vertical-lr;
+font-size: 32px;
+letter-spacing: 10px;
+font-family: 'Raleway', sans-serif;
+transition: font-size 0.4s ease-in-out
+
+}
+
+#conso{
+    text-decoration: line-through;
+    
+}
+
+#mmation{
+background-color: #D44747;
+width:50%;
+padding:10px;
+color:white;
+
+}
+
+.section-1 img{
+    position:absolute;
+    top:0;
+    right:0;
+  
+
+}
+
+
+
+@media screen and (max-width:1300px){
+    
+    .text-intro p{
+     
+        width:50%;
+        min-width:400px;
+        margin-left:200px;
+        font-size:20px;
+        letter-spacing: 5px;
+        padding:10px;
+        color:black;
+      
+      
+        }
+
+        .section-1 img{
+            transition:all 0.4s ease-in-out
+        }
+        .section-1 img{
+          width:350px;
+        
+
+        }
+        
+}
+
+@media screen and (max-width:1124px){
+
+    .sous-titre{
+        min-width:400px;
+        font-size:16px;
+        letter-spacing: 5px;
+      
+    }
+
+    .title-consommation{
+        position:absolute;
+        top:2%;
+        left:5%;
+        text-transform: uppercase;
+        writing-mode: vertical-lr;
+        font-size: 32px;
+        letter-spacing: 10px;
+        font-family: 'Raleway', sans-serif;
+        transition: font-size 0.4s ease-in-out
+        }
+
+        .section-1 img{
+         display:none;
+
+          }
+
+       
+
+}
+
+
+@media screen and (max-width:700px) {
+    .text-intro p{
+        width:50%;
+        min-width:400px;
+        font-size:14px;
+        letter-spacing: 5px;
+        padding:10px;
+        margin:auto;
+    
+        }
+
+        
+    .title-consommation{
+        position:absolute;
+        top:2%;
+        left:10%;
+        text-transform: uppercase;
+        writing-mode: horizontal-tb;
+        font-size: 22px;
+        letter-spacing: 10px;
+        font-family: 'Raleway', sans-serif;
+        transition: font-size 0.4s ease-in-out
+        }
+}
+
+
+@media screen and (max-width:600px){
+    
+    .title-consommation{
+        position:absolute;
+        top:2%;
+        left:10%;
+        font-size: 14px;
+        transition: font-size 0.4s ease-in-out
+        
+        }
+    
+}
+
+
